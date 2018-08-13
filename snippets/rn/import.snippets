@@ -7,3 +7,19 @@ snippet ipr
 
 snippet iprn 'import react native components'
 	import { ${1} } from 'react-native';
+
+# React Native Export Default Class
+snippet edc
+	export default class ${1:className} extends Component {
+		render() {
+			return(
+				${2:return body}
+			);
+		}
+	}
+
+# use StyleSheet create style
+snippet shc
+	const styles = StyleSheet.create({
+		$1
+	})
