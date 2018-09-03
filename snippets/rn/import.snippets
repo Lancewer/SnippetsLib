@@ -2,14 +2,14 @@
 extends javascript
 
 # This is almost a must import
-snippet ipr
+snippet ipr 'Import React'
 	import React, { Component } from 'react';
 
-snippet iprn 'import react native components'
+snippet iprn 'Import React Native Components'
 	import { ${1} } from 'react-native';
 
 # React Native Export Default Class
-snippet edc
+snippet edc 'Export Default Class'
 	export default class ${1:className} extends Component {
 		render() {
 			return(
@@ -19,7 +19,7 @@ snippet edc
 	}
 
 # use StyleSheet create style
-snippet shc
+snippet shc 'Style Sheet Create'
 	const styles = StyleSheet.create({
 		$1
 	})
